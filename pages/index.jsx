@@ -217,7 +217,7 @@ export default function Page() {
         className={`expertise flex flex-col sm:flex-row gap-4 sm:gap-20 p-3 sm:p-20 h-fit sm:h-[100vh] w-full bg-gradient-to-b from-background-dark6 to-background-dark2  items-center
   transition-opacity duration-1000 ${isLoaded ? "opacity-100" : "opacity-0"}`}
       >
-        <div className="box1 border-black border-2  w-full sm:h-[45vh] p-4 mt-12 sm:mt-0 flex flex-col gap-4 sm:gap-12">
+        <div className="box1 border-black border-2  w-full sm:min-h-[50vh] sm:h-80 p-4 mt-12 sm:mt-0 flex flex-col gap-4 sm:gap-12">
           <div className="flex flex-row justify-between gap-3">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -243,7 +243,7 @@ export default function Page() {
             </p>
           </div>
         </div>
-        <div className="box2 border-black border-2  w-full sm:h-[45vh] p-4 flex flex-col gap-4 sm:gap-12">
+        <div className="box2 border-black border-2  w-full sm:min-h-[50vh] sm:h-80 p-4 flex flex-col gap-4 sm:gap-12">
           <div className="flex flex-row justify-between">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -279,7 +279,7 @@ export default function Page() {
             </p>
           </div>
         </div>
-        <div className="box3 border-black border-2  w-full sm:h-[45vh] p-4 flex flex-col gap-4 sm:gap-12">
+        <div className="box3 border-black border-2  w-full sm:min-h-[50vh] sm:h-80 p-4 flex flex-col gap-4 sm:gap-12">
           <div className="flex flex-row justify-between">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -447,7 +447,7 @@ export default function Page() {
         className={`projects text-light-text flex flex-col sm:flex-row p-3 sm:p-12 w-full bg-gradient-to-b from-background-dark4 to-background-dark6 h-fit -mb-px items-center justify-center gap-3 
     transition-opacity  ${isLoaded ? "opacity-100" : "opacity-0"}`}
       >
-        <div className="box1 border-black border-2  w-full sm:h-[45vh] p-4 flex flex-col gap-4 sm:gap-12">
+        <div className="box1 border-black border-2  w-full sm:min-h-[50vh] sm:h-96 p-4 flex flex-col gap-4 sm:gap-12">
           <div className="flex flex-row p-4 w-">
             <div className="w-5/12 flex flex-col items-center">
               <img
@@ -472,7 +472,7 @@ export default function Page() {
             </h1>
           </div>
         </div>
-        <div className="box2 border-black border-2  w-full sm:h-[45vh] p-4 flex flex-col gap-4 sm:gap-12">
+        <div className="box2 border-black border-2  w-full sm:min-h-[50vh] sm:h-96  p-4 flex flex-col gap-4 sm:gap-12">
           <div className="flex flex-row p-4">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -515,7 +515,7 @@ export default function Page() {
             </h1>
           </div>
         </div>
-        <div className="box3 border-black border-2  w-full sm:h-[45vh] p-4 flex flex-col gap-4 sm:gap-12">
+        <div className="box3 border-black border-2  w-full sm:min-h-[50vh] sm:h-96 p-4 flex flex-col gap-4 sm:gap-12">
           <div className="flex flex-row p-4">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -552,7 +552,7 @@ export default function Page() {
         id="contact-me"
         className="contact-me h-fit w-full flex flex-col bg-gradient-to-b from-background-dark6 to-background-dark3 p-4 sm:p-12 items-center gap-24 sm:gap-48"
       >
-        <h1 className=" text-6xl sm:text-9xl text-center font-bold text-topnav-font">
+        <h1 className="pt-24 text-6xl sm:text-9xl text-center font-bold text-topnav-font">
           Avaliable for hire
         </h1>
         <div className="work flex flex-col h-fit w-full gap-5 sm:gap-12  items-center p-4">
