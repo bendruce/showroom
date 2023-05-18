@@ -448,9 +448,22 @@ export default function Page() {
     transition-opacity  ${isLoaded ? "opacity-100" : "opacity-0"}`}
       >
         <div className="box1 border-black border-2  w-full sm:h-[45vh] p-4 flex flex-col gap-4 sm:gap-12">
-          <h1 className="mx-auto text-center w-7/12 flex flex-col items-center justify-center gap-3  text-xl font-bold text-light-text">
-            Movement Clinics
-          </h1>
+          <div className="flex flex-row p-4 w-">
+            <div className="w-5/12 flex flex-col items-center">
+              <img
+                src="/images/movement-clinics-logo.jpg"
+                alt="Logo"
+                className="h-[10vh]  rounded shadow mr-3"
+              ></img>
+            </div>
+
+            <div className="mx-auto text-center w-7/12 flex flex-col items-center justify-center gap-3 text-xl font-bold text-light-text">
+              <h1 className="w-fit border-b-8 border-black inline-block whitespace-nowrap">
+                Movement
+              </h1>
+              <h1>Clinics</h1>
+            </div>
+          </div>
           <div className="w-full h-fit">
             <h1>
               Creating a bespoke website for a sports therapy clinic using
@@ -503,9 +516,28 @@ export default function Page() {
           </div>
         </div>
         <div className="box3 border-black border-2  w-full sm:h-[45vh] p-4 flex flex-col gap-4 sm:gap-12">
-          <h1 className="mx-auto text-center w-7/12 flex flex-col items-center justify-center gap-3  text-xl font-bold text-light-text">
-            Team Projects Module
-          </h1>
+          <div className="flex flex-row p-4">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="w-5/12 h-[10vh]"
+              viewBox="0 0 598 598"
+            >
+              <path
+                fill="#F7F7F7"
+                d="M224 388.933h149.333c24.708 0 44.803-20.093 44.803-44.802V45.464c0-24.708-20.093-44.803-44.803-44.803H224c-24.708 0-44.803 20.094-44.803 44.803v298.667c0 24.702 20.094 44.797 44.803 44.797v.005zM209.068 45.467c0-8.235 6.698-14.932 14.932-14.932h149.333c8.235 0 14.932 6.698 14.932 14.932v298.666c0 8.235-6.698 14.932-14.932 14.932H224c-8.234 0-14.932-6.697-14.932-14.932V45.467zM149.333 508.4h-134.4C6.69 508.4.001 515.093.001 523.332v59.735c0 8.245 6.693 14.932 14.932 14.932h134.4c8.245 0 14.932-6.693 14.932-14.932v-59.735c0-8.245-6.687-14.932-14.932-14.932zm-14.932 59.735H29.865v-29.864h104.531l.005 29.864zm448-59.735h-134.4c-8.244 0-14.932 6.693-14.932 14.932v59.735c0 8.245 6.693 14.932 14.932 14.932h134.4c8.245 0 14.932-6.693 14.932-14.932v-59.735c0-8.245-6.692-14.932-14.932-14.932zm-14.932 59.735H462.933v-29.864h104.531l.005 29.864zm-201.6-59.735h-134.4c-8.244 0-14.932 6.693-14.932 14.932v59.735c0 8.245 6.693 14.932 14.932 14.932h134.4c8.245 0 14.932-6.693 14.932-14.932v-59.735c0-8.245-6.692-14.932-14.937-14.932h.005zm-14.932 59.735h-104.53v-29.864h104.53v29.864zm-112-358.4h9.672c1.037 3.463 2.396 6.797 4.099 9.916l-6.823 6.823c-5.833 5.834-5.833 15.287 0 21.115a14.85 14.85 0 0010.558 4.375A14.87 14.87 0 00267 247.589l6.823-6.823a52.393 52.393 0 009.916 4.099v9.667c0 8.244 6.693 14.932 14.932 14.932 8.245 0 14.932-6.693 14.932-14.932v-9.672c3.464-1.037 6.797-2.396 9.917-4.099l6.823 6.823a14.848 14.848 0 0010.557 4.375c3.823 0 7.646-1.459 10.558-4.375 5.833-5.834 5.833-15.287 0-21.115l-6.823-6.823a52.525 52.525 0 004.099-9.916l9.672.005c8.244 0 14.932-6.693 14.932-14.932 0-8.245-6.693-14.932-14.932-14.932h-9.672c-1.037-3.464-2.396-6.797-4.099-9.917l6.823-6.823c5.833-5.833 5.833-15.287 0-21.115-5.823-5.833-15.292-5.833-21.115 0l-6.823 6.823a52.507 52.507 0 00-9.917-4.099v-9.671c0-8.245-6.692-14.932-14.932-14.932-8.244 0-14.932 6.692-14.932 14.932v9.671c-3.463 1.037-6.796 2.396-9.916 4.099L267 142.016c-5.823-5.833-15.292-5.833-21.115 0-5.833 5.834-5.833 15.287 0 21.115l6.823 6.823a52.441 52.441 0 00-4.099 9.917l-9.672-.005c-8.244 0-14.932 6.692-14.932 14.932 0 8.244 6.693 14.937 14.932 14.937zm59.735-37.334c12.349 0 22.401 10.053 22.401 22.402s-10.052 22.401-22.401 22.401-22.401-10.052-22.401-22.401c0-12.354 10.052-22.402 22.401-22.402zM67.205 478.535v-29.864c0-8.245 6.693-14.932 14.932-14.932h201.6v-14.932c0-8.245 6.693-14.932 14.932-14.932 8.245 0 14.932 6.692 14.932 14.932v14.932h201.6c8.245 0 14.932 6.692 14.932 14.932v29.864c0 8.245-6.692 14.932-14.932 14.932-8.244 0-14.932-6.693-14.932-14.932v-14.932H313.603v14.932c0 8.245-6.693 14.932-14.932 14.932-8.245 0-14.932-6.693-14.932-14.932v-14.932H97.072v14.932c0 8.245-6.693 14.932-14.932 14.932-8.245.005-14.937-6.688-14.937-14.932h.002z"
+              ></path>
+              <path fill="#F7F7F7" d="M448 527H574V577H448z"></path>
+              <path fill="#F7F7F7" d="M239 530H358V577H239z"></path>
+              <path fill="#F7F7F7" d="M22 526H146V577H22z"></path>
+            </svg>
+            <div className="mx-auto text-center w-7/12 flex flex-col items-center justify-center gap-3 text-xl font-bold text-light-text">
+              <h1 className="w-fit border-b-8 border-purple-300  inline-block whitespace-nowrap">
+                Team Projects
+              </h1>
+              <h1>Module</h1>
+            </div>
+          </div>
+
           <div className="w-full h-fit">
             <h1>
               Completed a 3-stage team project module. This has involved
