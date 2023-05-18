@@ -444,7 +444,7 @@ export default function Page() {
       </div>
       <div
         id="projects"
-        className={`projects text-light-text flex flex-col sm:flex-row p-3 sm:p-12 w-full bg-gradient-to-b from-background-dark4 to-background-dark6 h-[100vh] -mb-px items-center justify-center gap-3 
+        className={`projects text-light-text flex flex-col sm:flex-row p-3 sm:p-12 w-full bg-gradient-to-b from-background-dark4 to-background-dark6 h-fit -mb-px items-center justify-center gap-3 
     transition-opacity  ${isLoaded ? "opacity-100" : "opacity-0"}`}
       >
         <div className="box1 border-black border-2  w-full sm:h-[45vh] p-4 flex flex-col gap-4 sm:gap-12">
