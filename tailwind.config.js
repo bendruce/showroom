@@ -17,10 +17,12 @@ module.exports = {
         "background-light1": "#EAE1DF",
         "background-light2": "#F7F7F7",
         "react-color": "#61DBFB",
+        "sigma-color": "#B89769",
       },
       textColor: {
         "light-font": "#F7F7F7",
         "topnav-font": "#219ebc",
+        "light-text": "#F7F7F7",
       },
       fontFamily: {
         "font-custom-1": ["Cascadia Code", "monospace"],

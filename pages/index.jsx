@@ -110,7 +110,7 @@ export default function Page() {
               <span className="hamburger-line w-full h-0.5 bg-white"></span>
             </button>
           </div>
-          <div className="link-container w-fit hidden sm:flex flex-row justify-between gap-12 text-light-font">
+          <div className="link-container w-fit hidden sm:flex flex-row justify-between gap-12 text-light-text">
             <Link
               href="/#expertise"
               passHref
@@ -143,7 +143,7 @@ export default function Page() {
         </div>
         {dropdownVisible && (
           <div
-            className="dropdown-container flex flex-col justify-between w-full h-fit p-5 gap-5 text-light-font"
+            className="dropdown-container flex flex-col justify-between w-full h-fit p-5 gap-5 text-light-text"
             ref={dropdownRef}
           >
             <Link
@@ -183,14 +183,14 @@ export default function Page() {
     transition-opacity duration-1000 ${isLoaded ? "opacity-100" : "opacity-0"}`}
       >
         <div
-          className={`font-bold text-5xl sm:text-8xl text-center transition-opacity duration-1000 text-light-font ${
+          className={`font-bold text-5xl sm:text-8xl text-center transition-opacity duration-1000 text-light-text ${
             isNameVisible ? "opacity-100" : "opacity-0"
           }`}
         >
           <h1>Benjamin Druce</h1>
         </div>
         <div
-          className={`text-4xl sm:text-5xl text-center transition-opacity duration-1000 text-light-font ${
+          className={`text-4xl sm:text-5xl text-center transition-opacity duration-1000 text-light-text ${
             isTitleVisible ? "opacity-100" : "opacity-0"
           }`}
         >
@@ -229,14 +229,14 @@ export default function Page() {
                 d="M48.672.881C21.875.881 0 22.432 0 48.681V404.79c0 26.249 21.875 47.8 48.672 47.8h194.4l-31.781 80.101h-71.14c-6.443 0-11.667 5.105-11.667 11.407 0 3.032 1.229 5.931 3.417 8.076a11.8 11.8 0 008.25 3.342h396.36c3.093 0 6.062-1.202 8.25-3.342 2.187-2.145 3.416-5.044 3.416-8.076 0-6.302-5.224-11.407-11.666-11.407h-71.14l-31.782-80.101h194.4c26.798 0 48.672-21.551 48.672-47.8V48.68c0-26.248-21.874-47.799-48.672-47.799H48.672zm0 22.825l579.32.006c14.208 0 25.339 10.908 25.339 24.974V321.53h-95.798v-54.107l.006-.005c-.006-6.298-5.224-11.403-11.667-11.408h-36.479a173.094 173.094 0 00-16.953-40.244l25.86-25.423a11.237 11.237 0 000-16.095l-49.864-49.028v-.005a11.81 11.81 0 00-8.271-3.362 11.797 11.797 0 00-8.266 3.362l-25.797 25.367a179.064 179.064 0 00-40.839-16.629v-35.94.005c0-3.031-1.229-5.93-3.416-8.075a11.803 11.803 0 00-8.25-3.343h-70.531c-6.443.006-11.667 5.116-11.667 11.418v35.97a178.349 178.349 0 00-40.797 16.64l-25.839-25.408v-.005a11.793 11.793 0 00-8.265-3.362 11.81 11.81 0 00-8.271 3.362l-49.86 49.028v.005a11.237 11.237 0 000 16.095l25.907 25.469a172.37 172.37 0 00-16.948 40.198H130.79c-6.443.005-11.662 5.11-11.667 11.408v54.107H23.326V48.681c0-14.067 11.135-24.974 25.338-24.974h.008zm266.067 85.712h47.197v33.438c0 5.359 3.818 10.001 9.172 11.147a155.429 155.429 0 0150.484 20.564v-.006c4.63 2.92 10.719 2.273 14.599-1.548l23.984-23.579 33.401 32.847-24.068 23.666c-3.849 3.796-4.49 9.691-1.542 14.195a150.04 150.04 0 0120.927 49.68c1.161 5.253 5.911 8.997 11.401 8.997h33.937v42.695H408.179a70.336 70.336 0 002.735-19.427c0-39.215-32.599-71.303-72.574-71.303-39.973 0-72.573 32.092-72.573 71.303 0 6.597.927 13.134 2.734 19.427H142.449v-42.695h33.99-.011c5.49 0 10.235-3.744 11.401-8.987a150.346 150.346 0 0120.927-49.64c2.948-4.504 2.302-10.403-1.547-14.194l-24.12-23.717 33.407-32.848 24.031 23.63c3.885 3.827 9.973 4.474 14.603 1.554a155.47 155.47 0 0150.438-20.583c5.349-1.151 9.161-5.788 9.161-11.147l.01-33.469zm23.598 144.188c27.303 0 49.246 21.542 49.246 48.483 0 6.71-1.412 13.318-4.146 19.428h-90.224c-2.688-6.109-4.146-12.717-4.146-19.428 0-26.941 21.948-48.483 49.245-48.483h.025zm-70.226 198.985h140.466l31.782 80.101H236.332l31.779-80.101z"
               ></path>
             </svg>
-            <div className="mx-auto text-center w-7/12 flex flex-col items-center justify-center gap-3 text-xl font-bold text-light-font">
+            <div className="mx-auto text-center w-7/12 flex flex-col items-center justify-center gap-3 text-xl font-bold text-light-text">
               <h1 className="w-fit border-b-8 border-red-300 inline-block">
                 Software
               </h1>
               <h1>Development</h1>
             </div>
           </div>
-          <div className="description3 w-full h-full text-light-font text-xl ">
+          <div className="description3 w-full h-full text-light-text text-xl ">
             <p>
               Experience in both OOP and Functional programming. Proficient at
               Python, Java, HTML, CSS, JavaScript
@@ -264,14 +264,14 @@ export default function Page() {
               ></path>
               <circle cx="364" cy="371" r="50" fill="#F7F7F7"></circle>
             </svg>
-            <div className="mx-auto text-center w-7/12 flex flex-col items-center justify-center gap-3  text-xl font-bold text-light-font">
+            <div className="mx-auto text-center w-7/12 flex flex-col items-center justify-center gap-3  text-xl font-bold text-light-text">
               <h1 className="w-fit border-b-8 border-react-color inline-block">
                 Web & App
               </h1>
               <h1>Development</h1>
             </div>
           </div>
-          <div className="description2 w-full text-light-font text-xl">
+          <div className="description2 w-full text-light-text text-xl">
             <p>
               Experienced in front and back end development for Web Development
               and App Design. Proficient at Node.js, React, HTML, CSS,
@@ -291,14 +291,14 @@ export default function Page() {
                 d="M199.667 299.333c54.88 0 99.557-45.797 99.557-102.046v-56.995l67.079-28.62c4.354-1.865 7.343-6.099 7.588-10.828.25-4.73-2.364-9.208-6.469-11.573L205.649 2.16c-3.734-1.989-8.088-1.989-11.823 0L32.053 89.272c-1.12.62-1.99 1.245-2.865 2.114 0 0-.125.125-.125.25-.994.995-1.62 2.115-2.24 3.36-.124.375-.25.745-.5 1.12-.374 1.12-.62 2.364-.744 3.609 0 .25-.125.375-.125.62v74.666c0 6.844 5.599 12.443 12.443 12.443 6.843 0 12.442-5.599 12.442-12.443v-55.874l49.776 21.281v56.995c0 56.125 44.678 101.921 99.558 101.921h-.006zm74.666-102.046c0 42.562-33.473 77.156-74.666 77.156-41.194 0-74.667-34.594-74.667-77.156v-12.693c49.651-12.568 99.803-12.568 149.333 0v12.693zm0-38.328c-49.65-11.698-99.682-11.698-149.333 0v-24.14c49.651-12.568 99.803-12.568 149.333 0v24.14zM66.507 98.98l133.156-71.683L332.819 98.98l-38.454 16.427c-.375-.25-.869-.375-1.244-.62a9.381 9.381 0 00-2.24-1.12c-.25-.125-.375-.25-.62-.375-60.104-17.172-120.959-17.172-181.067 0-.25.125-.375.25-.619.375-.87.25-1.495.745-2.24 1.12-.375.25-.87.375-1.245.62L66.507 98.98zM.56 431.373V585.56c0 6.844 5.599 12.443 12.443 12.443h373.333c6.844 0 12.443-5.599 12.443-12.443V431.373c0-18.917-6.099-36.958-17.547-52.39-11.448-15.432-28.125-26.755-47.167-31.86l-36.213-9.584c-9.333-2.489-18.047-6.968-25.385-13.192-.375-.375-.87-.5-1.245-.745-.25-.25-.5-.5-.745-.62-.25-.125-.5-.125-.87-.25-.869-.375-1.744-.62-2.739-.87l-1.865-.375c-.25 0-.5-.125-.745-.125h.125c-.619 0-1.119.25-1.619.375-.745.125-1.495.25-2.24.5-.87.25-1.745.745-2.49 1.245-.5.375-.994.62-1.494.995-.745.62-1.37 1.495-1.99 2.364-.25.375-.62.5-.745.87l-54.136 103.662-54.01-103.786c-.25-.375-.62-.62-.87-.995-.25-.25-.25-.619-.5-.869-.25-.375-.62-.5-.995-.745-.62-.62-1.37-1.245-2.115-1.62-.619-.375-1.244-.745-1.989-.995-.745-.25-1.495-.5-2.365-.619-.744-.125-1.494-.25-2.239-.125-.745 0-1.62.125-2.365.25-.87.125-1.62.375-2.364.744-.375.125-.87.125-1.245.375-.375.25-.5.5-.87.745-.375.25-.745.375-1.12.62-7.343 6.099-15.802 10.578-25.385 13.193l-36.213 9.708c-19.042 5.104-35.344 16.052-47.167 31.86C6.654 394.416.56 412.457.56 431.373zm24.885 0c0-13.437 4.354-26.38 12.568-37.458 8.464-11.198 20.036-19.042 33.724-22.771l36.339-9.708c8.088-2.24 15.682-5.599 22.65-9.709l58.115 103.042c2.24 3.979 6.349 6.344 10.828 6.344 4.479 0 8.589-2.365 10.828-6.349l58.115-102.918c7.219 4.229 14.932 7.714 23.021 9.834l36.088 9.583c13.563 3.609 25.386 11.698 33.599 22.651 8.214 11.078 12.568 24.016 12.568 37.458l.005 141.734H25.44l.005-141.733z"
               ></path>
             </svg>
-            <div className="mx-auto text-center w-7/12 flex flex-col items-center justify-center gap-3 text-xl font-bold text-light-font">
+            <div className="mx-auto text-center w-7/12 flex flex-col items-center justify-center gap-3 text-xl font-bold text-light-text">
               <h1 className="w-fit border-b-8 border-green-300 inline-block whitespace-nowrap">
                 Computer Science
               </h1>
               <h1>Student</h1>
             </div>
           </div>
-          <div className="description3 w-full text-light-font text-xl">
+          <div className="description3 w-full text-light-text text-xl">
             <p>
               Second Year Computer Science BSc student at Loughborough
               University
@@ -312,7 +312,7 @@ export default function Page() {
     transition-opacity duration-1000 ${isLoaded ? "opacity-100" : "opacity-0"}`}
       >
         <div className="w-[85%] sm:w-[80%] h-fit bg-custom-main p-4 sm:p-8 rounded-xl flex flex-row justify-between">
-          <h1 className="text-light-font text-xl sm:text-4xl">
+          <h1 className="text-light-text text-xl sm:text-4xl">
             Machine operator @ GT Bunning & Sons
           </h1>
           <button
@@ -347,7 +347,7 @@ export default function Page() {
                     d="M6 16s6-5.686 6-10A6 6 0 100 6c0 4.314 6 10 6 10zm0-7a3 3 0 110-6 3 3 0 010 6z"
                   ></path>
                 </svg>
-                <h1 className="text-light-font text-xl sm:text-4xl">
+                <h1 className="text-light-text text-xl sm:text-4xl">
                   Gressenhall, UK
                 </h1>
               </div>
@@ -362,13 +362,13 @@ export default function Page() {
                     d="M3.5 0a.5.5 0 01.5.5V1h8V.5a.5.5 0 011 0V1h1a2 2 0 012 2v11a2 2 0 01-2 2H2a2 2 0 01-2-2V3a2 2 0 012-2h1V.5a.5.5 0 01.5-.5zM1 4v10a1 1 0 001 1h12a1 1 0 001-1V4H1z"
                   ></path>
                 </svg>
-                <h1 className="text-light-font text-xl sm:text-4xl">
+                <h1 className="text-light-text text-xl sm:text-4xl">
                   07-22 to 09-22
                 </h1>
               </div>
             </div>
             <div>
-              <h1 className="text-light-font text-lg sm:text-xl ">
+              <h1 className="text-light-text text-lg sm:text-xl ">
                 Worked within multiple teams on the production line to
                 manufacture parts used to create agricultural and industrial
                 machinery for a company with a turnover of £17 million in 2021.
@@ -377,7 +377,7 @@ export default function Page() {
           </div>
         )}
         <div className="w-[85%] sm:w-[80%] h-fit bg-custom-main p-4 sm:p-8 rounded-xl flex flex-row justify-between">
-          <h1 className="text-light-font text-xl sm:text-4xl">
+          <h1 className="text-light-text text-xl sm:text-4xl">
             Bartender @ Dial House
           </h1>
           <button
@@ -412,7 +412,7 @@ export default function Page() {
                     d="M6 16s6-5.686 6-10A6 6 0 100 6c0 4.314 6 10 6 10zm0-7a3 3 0 110-6 3 3 0 010 6z"
                   ></path>
                 </svg>
-                <h1 className="text-light-font text-xl sm:text-4xl">
+                <h1 className="text-light-text text-xl sm:text-4xl">
                   Reepham, UK
                 </h1>
               </div>
@@ -428,13 +428,13 @@ export default function Page() {
                     d="M3.5 0a.5.5 0 01.5.5V1h8V.5a.5.5 0 011 0V1h1a2 2 0 012 2v11a2 2 0 01-2 2H2a2 2 0 01-2-2V3a2 2 0 012-2h1V.5a.5.5 0 01.5-.5zM1 4v10a1 1 0 001 1h12a1 1 0 001-1V4H1z"
                   ></path>
                 </svg>
-                <h1 className="text-light-font text-xl sm:text-4xl">
+                <h1 className="text-light-text text-xl sm:text-4xl">
                   07-20 to 09-21
                 </h1>
               </div>
             </div>
             <div>
-              <h1 className="text-light-font text-lg sm:text-xl ">
+              <h1 className="text-light-text text-lg sm:text-xl ">
                 Worked as a bartender within a front of house team, engaging
                 with customers whilst creating and serving their drinks.
               </h1>
@@ -444,33 +444,74 @@ export default function Page() {
       </div>
       <div
         id="projects"
-        className={`projects flex flex-col p-3 sm:p-12 w-full bg-gradient-to-b from-background-dark4 to-background-dark6 h-[100vh] -mb-px items-center justify-center gap-3 
+        className={`projects text-light-text flex flex-col sm:flex-row p-3 sm:p-12 w-full bg-gradient-to-b from-background-dark4 to-background-dark6 h-[100vh] -mb-px items-center justify-center gap-3 
     transition-opacity  ${isLoaded ? "opacity-100" : "opacity-0"}`}
       >
-        <div className="box3 border-black border-2  w-full sm:h-[45vh] p-4 flex flex-col gap-4 sm:gap-12">
-          <h1>Movement Clinics</h1>
+        <div className="box1 border-black border-2  w-full sm:h-[45vh] p-4 flex flex-col gap-4 sm:gap-12">
+          <h1 className="mx-auto text-center w-7/12 flex flex-col items-center justify-center gap-3  text-xl font-bold text-light-text">
+            Movement Clinics
+          </h1>
           <div className="w-full h-fit">
             <h1>
-              xdbf khdsbf khads kdh fbkhd vhksdfb vdhskvh fshjk h vskh vsh
-              vskhvkhs
+              Creating a bespoke website for a sports therapy clinic using
+              Next.js and React. This project involves using AWS for hosting,
+              Stripe for payments and a custom booking system.
+            </h1>
+          </div>
+        </div>
+        <div className="box2 border-black border-2  w-full sm:h-[45vh] p-4 flex flex-col gap-4 sm:gap-12">
+          <div className="flex flex-row p-4">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="w-5/12 h-[10vh]"
+              viewBox="0 0 710 710"
+            >
+              <path
+                fill="#F7F7F7"
+                d="M695.307 224.093c18.552-18.552 18.552-48.645 0-67.197l-34.167-34.167 6.448-6.448c9.844-9.843 15.271-22.964 15.271-36.88 0-13.915-5.433-27.035-15.271-36.88-20.364-20.364-53.511-20.364-73.875 0l-6.448 6.448-34.166-34.166c-18.552-18.552-48.646-18.552-67.198 0l-17.65 17.65c-6.787 6.787-11.089 15.162-12.896 23.984l-19.574-19.573c-8.937-8.937-20.926-13.917-33.598-13.917s-24.662 4.979-33.599 13.917l-17.651 17.65c-8.937 8.938-13.917 20.927-13.917 33.6 0 12.671 4.979 24.661 13.917 33.598l81.792 81.792-230.106 230-81.792-81.792c-18.552-18.552-48.645-18.552-67.197 0l-17.651 17.651C27.04 378.3 22.06 390.289 22.06 402.961s4.98 24.662 13.918 33.599l19.573 19.573c-8.823 1.813-17.197 6.11-23.984 12.896l-17.541 17.536c-18.552 18.552-18.552 48.646 0 67.198l34.166 34.166-6.447 6.448c-20.364 20.364-20.364 53.511 0 73.875 9.843 9.843 22.964 15.27 36.88 15.27 13.916 0 27.036-5.432 36.88-15.27l6.447-6.448 34.167 34.167c8.938 8.937 20.927 13.917 33.599 13.917 12.672 0 24.661-4.979 33.598-13.917l17.651-17.651c6.787-6.786 11.089-15.161 12.896-23.984l19.573 19.573c9.276 9.276 21.495 13.917 33.599 13.917 12.104 0 24.323-4.64 33.599-13.917l17.65-17.65c8.938-8.938 13.918-20.927 13.918-33.599 0-12.672-4.98-24.661-13.918-33.599l-81.792-81.792 230.334-230.333 81.792 81.792c8.937 8.937 20.926 13.917 33.598 13.917s24.662-4.979 33.599-13.917l17.651-17.651c18.552-18.552 18.552-48.645 0-67.197l-19.574-19.573c8.823-1.813 17.198-6.11 23.984-12.896l17.43-17.318zm-86.323-166.52c11.99-11.99 31.448-11.99 43.443 0 5.77 5.771 8.937 13.464 8.937 21.719 0 8.26-3.167 15.953-8.937 21.719l-6.448 6.448-43.443-43.443 6.448-6.443zm-508.64 595.414c-11.542 11.541-31.792 11.541-43.443 0-11.99-11.99-11.99-31.448 0-43.443l6.448-6.448 43.443 43.443-6.448 6.448zm125.464 10.177l-17.651 17.65c-10.182 10.183-26.697 10.183-36.765 0L29.179 538.601c-10.183-10.182-10.183-26.697 0-36.765l17.65-17.651c5.089-5.088 11.766-7.578 18.443-7.578 6.677 0 13.234 2.49 18.328 7.578l142.32 142.32c9.953 10.073 9.953 26.588-.115 36.656l.003.003zm124.896-40.386c0 6.901-2.714 13.464-7.578 18.443l-17.651 17.651c-10.068 10.182-26.584 10.182-36.765 0l-47.631-47.631v-.115L98.866 469.033h-.115l-47.63-47.631c-10.183-10.182-10.183-26.697 0-36.765l17.65-17.651c5.089-5.088 11.766-7.578 18.443-7.578 6.677 0 13.349 2.49 18.443 7.578l237.346 237.347c4.974 4.979 7.693 11.542 7.693 18.443l.008.002zm-89.489-130.552l-43.443-43.442L448.105 218.45l43.443 43.443-230.333 230.333zm396.973-166.08l-17.651 17.651c-9.843 9.844-26.926 9.844-36.765 0L366.305 106.224c-4.864-4.865-7.578-11.427-7.578-18.443 0-6.901 2.714-13.464 7.578-18.443l17.651-17.65c5.089-5.089 11.766-7.578 18.443-7.578 6.677 0 13.349 2.49 18.442 7.578l189.84 189.84h.115l47.631 47.63c9.828 10.297 9.828 26.812-.24 36.995l.001-.007zm-32.469-99.666L483.505 84.266c-10.182-10.182-10.182-26.697 0-36.765l17.651-17.65c5.089-5.09 11.766-7.579 18.443-7.579 6.677 0 13.349 2.49 18.442 7.578l142.094 142.094c10.182 10.182 10.182 26.697 0 36.765l-17.651 17.651c-10.073 10.182-26.588 10.291-36.771.114l.006.006z"
+              ></path>
+              <path
+                fill="#F7F7F7"
+                d="M627.362 32H699.583V77.77199999999999H627.362z"
+                transform="rotate(43.25 627.362 32)"
+              ></path>
+              <path
+                fill="#F7F7F7"
+                d="M60.362 597.661H132.583V643.433H60.362z"
+                transform="rotate(43.25 60.362 597.661)"
+              ></path>
+              <path
+                fill="#F7F7F7"
+                d="M202 437.467H535V537.467H202z"
+                transform="rotate(-45 202 437.467)"
+              ></path>
+            </svg>
+            <div className="mx-auto text-center w-7/12 flex flex-col items-center justify-center gap-3 text-xl font-bold text-light-text">
+              <h1 className="w-fit border-b-8 border-sigma-color inline-block whitespace-nowrap">
+                App Development
+              </h1>
+              <h1>Module</h1>
+            </div>
+          </div>
+
+          <div className="w-full h-fit">
+            <h1>
+              Created a workout tracker app in Java using Android Studio and a
+              Firebase Database for an app development module during year two of
+              University.
             </h1>
           </div>
         </div>
         <div className="box3 border-black border-2  w-full sm:h-[45vh] p-4 flex flex-col gap-4 sm:gap-12">
-          <h1>App Development Module</h1>
+          <h1 className="mx-auto text-center w-7/12 flex flex-col items-center justify-center gap-3  text-xl font-bold text-light-text">
+            Team Projects Module
+          </h1>
           <div className="w-full h-fit">
             <h1>
-              xdbf khdsbf khads kdh fbkhd vhksdfb vdhskvh fshjk h vskh vsh
-              vskhvkhs
-            </h1>
-          </div>
-        </div>
-        <div className="box3 border-black border-2  w-full sm:h-[45vh] p-4 flex flex-col gap-4 sm:gap-12">
-          <h1>Team Projects Module</h1>
-          <div className="w-full h-fit">
-            <h1>
-              xdbf khdsbf khads kdh fbkhd vhksdfb vdhskvh fshjk h vskh vsh
-              vskhvkhs
+              Completed a 3-stage team project module. This has involved
+              creating a knowledge and tasks management system using HTML,
+              Node.js, React, JavaScript, SQL and GCP. The current stage
+              involves creating an API for a team member analytics system.
             </h1>
           </div>
         </div>
@@ -483,10 +524,10 @@ export default function Page() {
           Avaliable for hire
         </h1>
         <div className="work flex flex-col h-fit w-full gap-5 sm:gap-12  items-center p-4">
-          <h1 className="text-light-font text-center text-2xl sm:text-4xl">
+          <h1 className="text-light-text text-center text-2xl sm:text-4xl">
             Seeking software engineering projects that challenge and inspire
           </h1>
-          <h1 className="text-light-font text-center text-2xl sm:text-4xl">
+          <h1 className="text-light-text text-center text-2xl sm:text-4xl">
             Contact me to explore how my expertise can benefit your initiatives
           </h1>
           <h1
@@ -500,7 +541,7 @@ export default function Page() {
           </h1>
         </div>
       </div>
-      <div className="footer w-full h-fit bg-gray-950 flex flex-col text-light-font p-3 items-center">
+      <div className="footer w-full h-fit bg-gray-950 flex flex-col text-light-text p-3 items-center">
         <h1>Built from Scratch with Love</h1>
       </div>
     </>
