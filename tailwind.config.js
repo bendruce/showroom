@@ -7,7 +7,7 @@ module.exports = {
         "header-footer": "#333F4C",
         "custom-main": "#219ebc",
         "custom-main-lighter": "#6dd1c7",
-        "custom-main-darker": "#184c44",
+        "custom-main-darker": "#1a7a90",
         "background-dark1": "#1F1F2D",
         "background-dark2": "#3D4051",
         "background-dark3": "#333F4C",

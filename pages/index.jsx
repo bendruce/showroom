@@ -308,7 +308,7 @@ export default function Page() {
       </div>
       <div
         id="employment"
-        className={`employment flex flex-col justify-center p-3 sm:p-12 w-full bg-gradient-to-b from-background-dark2 to-background-dark4 min-h-[100vh] -mb-px items-center gap-4 sm:gap-8 
+        className={`employment flex flex-col justify-center p-3 sm:p-12 w-full bg-gradient-to-b from-background-dark2 to-background-dark4 min-h-[100vh] h-fit -mb-px items-center gap-4 sm:gap-8 
     transition-opacity duration-1000 ${isLoaded ? "opacity-100" : "opacity-0"}`}
       >
         <div className="w-[85%] sm:w-[80%] h-fit bg-custom-main p-4 sm:p-8 rounded-xl flex flex-row justify-between">
