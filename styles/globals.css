@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #1f1f2d; /* or another dark color of your choice */
+}
+@keyframes arrow-breathe {
+  0% {
+    opacity: 0.1;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+.arrow-animate-breathe {
+  animation: arrow-breathe 2s infinite;
+}
