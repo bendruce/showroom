@@ -447,9 +447,9 @@ export default function Page() {
         className={`projects flex flex-col p-3 sm:p-12 w-full bg-gradient-to-b from-background-dark4 to-background-dark6 h-[100vh] -mb-px items-center justify-center gap-3 
     transition-opacity  ${isLoaded ? "opacity-100" : "opacity-0"}`}
       >
-        <div className="w-full h-fit border-black p-4 "><h1>Movement Clinics</h1></div>
-        <div className="w-full h-fit border-black p-4 "><h1>App Development Module</h1></div>
-        <div className="w-full h-fit border-black p-4 "><h1>Team Projects Module</h1></div>
+        <div className="w-full h-fit border-black border-2 p-4 "><h1>Movement Clinics</h1></div>
+        <div className="w-full h-fit border-black border-2 p-4 "><h1>App Development Module</h1></div>
+        <div className="w-full h-fit border-black border-2 p-4 "><h1>Team Projects Module</h1></div>
       </div>
       <div
         id="contact-me"
