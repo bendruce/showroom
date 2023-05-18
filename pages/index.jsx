@@ -92,7 +92,7 @@ export default function Page() {
 
   return (
     <>
-      <div className="topnav-dropdown-container fixed w-full  flex flex-col justify-between z-50">
+      <div className="topnav-dropdown-container fixed w-full  flex flex-col justify-between z-50 bg-[rgba(0,0,0,.2)]">
         <div className="topNavBar flex flex-row justify-between w-full  h-[7.5vh] items-center p-3 sm:p-8 ">
           <Link href="#title">
             <h1 className="name w-fit text-2xl sm:text-4xl  font-font-custom-1 text-topnav-font">
