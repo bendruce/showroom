@@ -447,9 +447,33 @@ export default function Page() {
         className={`projects flex flex-col p-3 sm:p-12 w-full bg-gradient-to-b from-background-dark4 to-background-dark6 h-[100vh] -mb-px items-center justify-center gap-3 
     transition-opacity  ${isLoaded ? "opacity-100" : "opacity-0"}`}
       >
-        <div className="w-full h-fit border-black border-2 p-4 "><h1>Movement Clinics</h1></div>
-        <div className="w-full h-fit border-black border-2 p-4 "><h1>App Development Module</h1></div>
-        <div className="w-full h-fit border-black border-2 p-4 "><h1>Team Projects Module</h1></div>
+        <div className="box3 border-black border-2  w-full sm:h-[45vh] p-4 flex flex-col gap-4 sm:gap-12">
+          <h1>Movement Clinics</h1>
+          <div className="w-full h-fit">
+            <h1>
+              xdbf khdsbf khads kdh fbkhd vhksdfb vdhskvh fshjk h vskh vsh
+              vskhvkhs
+            </h1>
+          </div>
+        </div>
+        <div className="box3 border-black border-2  w-full sm:h-[45vh] p-4 flex flex-col gap-4 sm:gap-12">
+          <h1>App Development Module</h1>
+          <div className="w-full h-fit">
+            <h1>
+              xdbf khdsbf khads kdh fbkhd vhksdfb vdhskvh fshjk h vskh vsh
+              vskhvkhs
+            </h1>
+          </div>
+        </div>
+        <div className="box3 border-black border-2  w-full sm:h-[45vh] p-4 flex flex-col gap-4 sm:gap-12">
+          <h1>Team Projects Module</h1>
+          <div className="w-full h-fit">
+            <h1>
+              xdbf khdsbf khads kdh fbkhd vhksdfb vdhskvh fshjk h vskh vsh
+              vskhvkhs
+            </h1>
+          </div>
+        </div>
       </div>
       <div
         id="contact-me"

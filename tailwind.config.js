@@ -5,7 +5,7 @@ module.exports = {
     extend: {
       colors: {
         "header-footer": "#333F4C",
-        "custom-main": "#2a9d8f",
+        "custom-main": "#219ebc",
         "custom-main-lighter": "#6dd1c7",
         "custom-main-darker": "#184c44",
         "background-dark1": "#1F1F2D",
@@ -20,7 +20,7 @@ module.exports = {
       },
       textColor: {
         "light-font": "#F7F7F7",
-        "topnav-font": "#2a9d8f",
+        "topnav-font": "#219ebc",
       },
       fontFamily: {
         "font-custom-1": ["Cascadia Code", "monospace"],
