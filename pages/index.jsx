@@ -574,7 +574,7 @@ export default function Page() {
         </div>
       </div>
       <div className="footer w-full h-fit bg-gray-950 flex flex-col text-light-text p-3 items-center">
-        <h1>Built from Scratch with Love</h1>
+        <h1>Built from Scratch by Me</h1>
       </div>
     </>
   );
