@@ -575,7 +575,7 @@ export default function Page() {
       </div>
       <div className="footer w-full h-fit bg-gray-950 flex flex-col sm:flex-row text-light-text p-3 items-center justify-between sm:px-12">
         <h1>Built from Scratch by Me</h1>
-        <a href="files/Benjamin Druce CV.pdf" download>
+        <a href="files/benjamin-druce-cv.pdf" download>
           Download My CV
         </a>
       </div>
