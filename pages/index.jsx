@@ -567,8 +567,8 @@ export default function Page() {
               animate-breathe opacity-100" : "opacity-0
             }`}
           >
-            <a href="mailto:bendruce@icloud.com?subject=Software%20Opportunity">
-              bendruce@icloud.com
+            <a href="mailto:hello@benwjd.com?subject=Software%20Opportunity">
+              hello@benwjd.com
             </a>
           </h1>
         </div>
