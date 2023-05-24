@@ -232,12 +232,13 @@ export default function Page() {
                   ></path>
                 </svg>
                 <div className="text-red-300  font-bold text-3xl text-center">
-                  Full Stack
+                  Software Developer
                 </div>
               </div>
             </div>
             <div className="flip-card-back  absolute w-full h-full bg-background-dark3 flex flex-col p-12 justify-center items-center border-4 border-solid border-red-300  rounded-xl">
               <div className="Description font-bold text-sm lg:text-xl">
+                <h1>Full-stack Developer</h1>
                 <h1>
                   Experienced in front and back end development for Web
                   Development and App Design. Proficient at Node.js, React,
@@ -251,7 +252,7 @@ export default function Page() {
         <div className="flip-card w-full    sm:min-h-[50vh] h-96">
           <div className="flip-card-inner relative w-full h-full">
             <div className="flip-card-front absolute w-full h-full bg-background-dark3 flex flex-col sm:p-12 justify-center items-center border-4 border-solid border-react-color  rounded-xl  sm:min-h-[50vh] sm:h-96  p-4  gap-4 sm:gap-12">
-              <div className="flex flex-col justify-center items-center gap-4 sm:gap-12">
+              <div className="flex flex-col justify-center items-center gap-4 sm:gap-8">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="w-8/12"
@@ -290,10 +291,10 @@ export default function Page() {
         <div className="flip-card w-full  sm:min-h-[50vh] h-[500px] sm:h-96 ">
           <div className="flip-card-inner relative w-full h-full ">
             <div className="flip-card-front absolute w-full h-full bg-background-dark3 flex flex-col sm:p-12 justify-center items-center border-4 border-solid border-custom-lboro rounded-xl  sm:min-h-[50vh] sm:h-96  p-4  gap-4 sm:gap-12">
-              <div className="flex flex-col justify-center items-center gap-4 sm:gap-12">
+              <div className="flex flex-col justify-center items-center gap-4 sm:gap-8">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="w-8/12 "
+                  className="w-6/12 "
                   viewBox="0 0 399 599"
                 >
                   <path
@@ -481,7 +482,7 @@ export default function Page() {
               </div>
             </div>
             <div className="flip-card-back  absolute w-full h-full bg-background-dark3 flex flex-col p-12 justify-center items-center border-4 border-solid border-black rounded-xl">
-              <div className="Description font-bold">
+              <div className="Description font-bold text-sm lg:text-xl">
                 <h1>
                   Creating a bespoke website for a sports therapy clinic using
                   Next.js and React. This project involves using AWS for
@@ -527,7 +528,7 @@ export default function Page() {
               </div>
             </div>
             <div className="flip-card-back  absolute w-full h-full bg-background-dark3 flex flex-col p-12 justify-center items-center border-4 border-solid border-sigma-color rounded-xl">
-              <div className="Description font-bold">
+              <div className="Description font-bold text-sm lg:text-xl">
                 <h1>
                   Created a workout tracker app in Java using Android Studio and
                   a Firebase Database for an app development module during year
@@ -561,7 +562,7 @@ export default function Page() {
               </div>
             </div>
             <div className="flip-card-back  absolute w-full h-full bg-background-dark3 flex flex-col p-12 justify-center items-center border-4 border-solid border-purple-300 rounded-xl">
-              <div className="Description font-bold">
+              <div className="Description font-bold  text-sm lg:text-xl">
                 <h1>
                   Completed a 3-stage team project module. This has involved
                   creating a knowledge and tasks management system using HTML,
