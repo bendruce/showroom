@@ -561,7 +561,7 @@ export default function Page() {
                 </div>
               </div>
             </div>
-            <div className="flip-card-back  absolute w-full h-full bg-background-dark3 flex flex-col p-12 justify-center items-center border-4 border-solid border-purple-300 rounded-xl">
+            <div className="flip-card-back  absolute w-full h-full bg-background-dark3 flex flex-col p-4 lg:p-12 justify-center items-center border-4 border-solid border-purple-300 rounded-xl">
               <div className="Description font-bold  text-sm lg:text-xl">
                 <h1>
                   Completed a 3-stage team project module. This has involved
