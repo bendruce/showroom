@@ -315,10 +315,12 @@ export default function Page() {
                 </h1>
                 <h2>Modules include:</h2>
                 <ul>
-                  <li>- Software Development</li>
+                  <li>- Software Engineering</li>
                   <li>- App Development</li>
                   <li>- Web Programming</li>
-                  <li>- Functional Engineering</li>
+                  <li>- Team Projects</li>
+                  <li>- Functional Programing</li>
+                  <li>- OOP</li>
                   <li>- AI</li>
                 </ul>
               </div>
