@@ -6,6 +6,7 @@ module.exports = {
       colors: {
         "header-footer": "#333F4C",
         "custom-main": "#219ebc",
+        "custom-lboro": "#a880e6",
         "custom-main-lighter": "#6dd1c7",
         "custom-main-darker": "#1a7a90",
         "background-dark1": "#1F1F2D",
@@ -23,6 +24,7 @@ module.exports = {
         "light-font": "#F7F7F7",
         "topnav-font": "#219ebc",
         "light-text": "#F7F7F7",
+        "custom-lboro": "#a880e6",
       },
       fontFamily: {
         "font-custom-1": ["Cascadia Code", "monospace"],
