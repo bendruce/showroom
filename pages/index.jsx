@@ -322,6 +322,7 @@ export default function Page() {
                   <li>- Functional Programing</li>
                   <li>- OOP</li>
                   <li>- AI</li>
+                  <li>- Databases</li>
                 </ul>
               </div>
             </div>
@@ -488,7 +489,8 @@ export default function Page() {
                 <h1>
                   Creating a bespoke website for a sports therapy clinic using
                   Next.js and React. This project involves using AWS for
-                  hosting, Stripe for payments and a custom booking system.
+                  hosting, Stripe for payments and a custom booking system using
+                  SQL.
                 </h1>
               </div>
             </div>
