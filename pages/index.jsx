@@ -597,7 +597,7 @@ export default function Page() {
                 </div>
               </div>
             </div>
-            <div className="flip-card-back  absolute w-full h-full bg-background-dark3 flex flex-col p-12 justify-center items-center border-4 border-solid border-black rounded-xl">
+            <div className="flip-card-back  absolute w-full h-full bg-background-dark3 flex flex-col p-12 justify-center items-center border-4 border-solid border-green-600 rounded-xl">
               <div className="Description font-bold text-sm lg:text-xl">
                 <h1>
                   Building a IOS app using Swift and Storyboard on XCode 14. It
