@@ -466,8 +466,8 @@ export default function Page() {
         )}
       </div>
       <div
-        id="projects"
-        className={`projects text-light-text flex flex-col sm:flex-row p-4 sm:p-12 w-full bg-gradient-to-b from-background-dark4 to-background-dark6 h-fit -mb-px items-center justify-center gap-4 sm:gap-8 
+        id="projects1"
+        className={`projects text-light-text flex flex-col sm:flex-row p-4 sm:p-12 w-full bg-gradient-to-b from-background-dark4 to-background-dark3 h-fit -mb-px items-center justify-center gap-4 sm:gap-8 
     transition-opacity  ${isLoaded ? "opacity-100" : "opacity-0"}`}
       >
         <div className="flip-card w-full sm:min-h-[50vh] h-96">
@@ -572,6 +572,38 @@ export default function Page() {
                   creating a knowledge and tasks management system using HTML,
                   Node.js, React, JavaScript, SQL and GCP. The current stage
                   involves creating an API for a team member analytics system.
+                </h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        id="projects2"
+        className={`projects text-light-text flex flex-row sm:flex-row p-4 sm:p-12 w-full bg-gradient-to-b from-background-dark3 to-background-dark6 h-fit -mb-px items-center justify-center gap-4 sm:gap-8 
+    transition-opacity  ${isLoaded ? "opacity-100" : "opacity-0"}`}
+      >
+        <div className="flip-card w-full lg:w-[30%] sm:min-h-[50vh] h-96">
+          <div className="flip-card-inner relative w-full h-full">
+            <div className="flip-card-front absolute w-full h-full bg-background-dark3 flex flex-col sm:p-12 justify-center items-center border-4 border-solid border-green-600 rounded-xl  sm:min-h-[50vh] sm:h-96  p-4  gap-4 sm:gap-12">
+              <div className="flex flex-col justify-center items-center gap-4 sm:gap-12">
+                <img
+                  src="/images/leaflifesaver-temp-logo.png"
+                  alt="Logo"
+                  className="w-8/12  rounded shadow mr-3"
+                ></img>
+                <div className="text-green-600 font-bold text-lg lg:text-3xl text-center">
+                  Leaf Life Saver
+                </div>
+              </div>
+            </div>
+            <div className="flip-card-back  absolute w-full h-full bg-background-dark3 flex flex-col p-12 justify-center items-center border-4 border-solid border-black rounded-xl">
+              <div className="Description font-bold text-sm lg:text-xl">
+                <h1>
+                  Building a IOS app using Swift and Storyboard on XCode 14. It
+                  allows users to store their plants with the length of time
+                  required between watering. Also uses Storekit2 for a one time
+                  payment. Currently waiting on Apple approval.
                 </h1>
               </div>
             </div>
