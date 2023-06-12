@@ -8,14 +8,16 @@ export default function Page() {
   const logoRef = useRef(null);
   const headerLogoRef = useRef(null);
   const headerRef = useRef(null);
+  const scrollableRef = useRef(null);
+  const videoRef = useRef(null);
+  const newsRef = useRef(null);
+  const footerRef = useRef(null);
   const logoSize = Math.max(4 - scrollY / 150, 1);
   const [isOpen, setIsOpen] = useState(false);
   const genericHamburgerLine = `h-0.5 w-6 my-1 bg-gray-50 transition ease transform duration-300`;
 
   const [currentIndex, setCurrentIndex] = useState(0);
   const totalImages = 297; // Total number of images for 360 view
-  const scrollableRef = useRef(null);
-  const videoRef = useRef(null);
 
   const handleScrollDiv = (event) => {
     let newIndex = currentIndex;
@@ -169,6 +171,38 @@ export default function Page() {
           window.pageYOffset +
           showroomsRef.current.getBoundingClientRect().top +
           showroomsRef.current.getBoundingClientRect().height / 2;
+        const scrollPosition = divMiddleY - window.innerHeight / 2;
+
+        // Scroll to the calculated position
+        window.scrollTo({ top: scrollPosition, behavior: "smooth" });
+      }
+      if (
+        newsRef.current.getBoundingClientRect().top <= 250 &&
+        newsRef.current.getBoundingClientRect().top >= -250
+      ) {
+        console.log("check");
+
+        // Calculate where to scroll to put the middle of the div in the middle of the screen
+        const divMiddleY =
+          window.pageYOffset +
+          newsRef.current.getBoundingClientRect().top +
+          newsRef.current.getBoundingClientRect().height / 2;
+        const scrollPosition = divMiddleY - window.innerHeight / 2;
+
+        // Scroll to the calculated position
+        window.scrollTo({ top: scrollPosition, behavior: "smooth" });
+      }
+      if (
+        footerRef.current.getBoundingClientRect().top <= 250 &&
+        footerRef.current.getBoundingClientRect().top >= -250
+      ) {
+        console.log("check");
+
+        // Calculate where to scroll to put the middle of the div in the middle of the screen
+        const divMiddleY =
+          window.pageYOffset +
+          footerRef.current.getBoundingClientRect().top +
+          footerRef.current.getBoundingClientRect().height / 2;
         const scrollPosition = divMiddleY - window.innerHeight / 2;
 
         // Scroll to the calculated position
@@ -451,8 +485,61 @@ export default function Page() {
           </div>
         </div>
       </div>
-      <div className="w-full min-h-[100vh] bg-gradient-to-b from-dark-5 to-dark-6 "></div>
-      <div className="w-full min-h-[100vh] bg-gradient-to-b from-dark-6 to-dark-7"></div>
+      <div
+        className="w-full min-h-[100vh] bg-gray-200 to-dark-6 "
+        ref={newsRef}
+      ></div>
+      <div
+        className="footer w-full min-h-[100vh] bg-aston-green p-12 font-optima"
+        ref={footerRef}
+      >
+        <div className="w-full   border-b-[0.5px] border-gray-50 pt-12 pb-8">
+          <h1 className=" text-gray-50 text-xl">Aston Martin</h1>
+        </div>
+        <div className="flex flex-col lg:flex-row justify-between">
+          <div className=" flex flex-col lg:flex-row justify-start  items-start pt-24 gap-24 ">
+            <div className="flex flex-col justify-start items-start gap-8">
+              <h1 className=" text-lg text-gray-100">Home</h1>
+              <h1 className=" text-lg text-gray-100">Our World</h1>
+              <h1 className=" text-lg text-gray-100">Models</h1>
+              <h1 className=" text-lg text-gray-100">Owners</h1>
+            </div>
+            <div className="flex flex-col justify-start items-start gap-8">
+              <h1 className=" text-lg text-gray-100">Store</h1>
+              <h1 className=" text-lg text-gray-100">Lifestyle</h1>
+              <h1 className=" text-lg text-gray-100">F1</h1>
+            </div>
+            <div className="flex flex-col justify-start items-start gap-8 ">
+              <h1 className=" text-lg text-gray-100">Corporate</h1>
+              <h1 className=" text-lg text-gray-100">About us</h1>
+              <h1 className=" text-lg text-gray-100">Media</h1>
+              <h1 className=" text-lg text-gray-100">Careers</h1>
+              <h1 className=" text-lg text-gray-100">Investors</h1>
+            </div>
+          </div>
+          <div className="flex flex-col justify-start items-start pt-24 ">
+            <h1 className=" text-lg text-gray-100">Find a dealer</h1>
+            <div className="find-dealer border-b-[0.5px] border-gray-50 w-full py-2 flex flex-row justify-between items-center">
+              <input
+                className="w-full bg-transparent outline-none text-gray-50"
+                type="text"
+                name="dealerLocation"
+                placeholder="Location"
+              ></input>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-4 w-4"
+                viewBox="0 0 79 79"
+              >
+                <path
+                  fill="#f9fafb"
+                  d="M78.4 76.5L58.5 56.6c12.2-13.2 11.9-33.7-.9-46.6C51 3.4 42.4.2 33.9.2S16.7 3.5 10.2 10C-3 23.2-3 44.5 10.1 57.6c6.6 6.6 15.2 9.8 23.7 9.8 8.2 0 16.4-3 22.8-8.9l19.9 19.9c.3.3.6.4.9.4.3 0 .7-.1.9-.4.6-.5.6-1.4.1-1.9zM33.8 64.8c-8.3 0-16.1-3.2-21.9-9.1-12.1-12.1-12.1-31.8 0-43.8C17.8 6 25.5 2.8 33.8 2.8c8.3 0 16.1 3.2 21.9 9.1 12.1 12.1 12.1 31.8 0 43.8-5.8 5.9-13.6 9.1-21.9 9.1z"
+                ></path>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
     </>
   );
 }
