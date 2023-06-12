@@ -15,6 +15,7 @@ export default function Page() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const totalImages = 297; // Total number of images for 360 view
   const scrollableRef = useRef(null);
+  const videoRef = useRef(null);
 
   const handleScrollDiv = (event) => {
     let newIndex = currentIndex;
@@ -22,13 +23,23 @@ export default function Page() {
     if (event.deltaY < 0 && currentIndex > 0) {
       // scrolling up
       newIndex = currentIndex - 1;
-
+      const divMiddleY =
+        window.pageYOffset +
+        scrollableRef.current.getBoundingClientRect().top +
+        scrollableRef.current.getBoundingClientRect().height / 2;
+      const scrollPosition = divMiddleY - window.innerHeight / 2;
+      window.scrollTo({ top: scrollPosition, behavior: "smooth" });
       // Prevent default scroll behavior
       event.preventDefault();
     } else if (event.deltaY > 0 && currentIndex < totalImages - 1) {
       // scrolling down
       newIndex = currentIndex + 1;
-
+      const divMiddleY =
+        window.pageYOffset +
+        scrollableRef.current.getBoundingClientRect().top +
+        scrollableRef.current.getBoundingClientRect().height / 2;
+      const scrollPosition = divMiddleY - window.innerHeight / 2;
+      window.scrollTo({ top: scrollPosition, behavior: "smooth" });
       // Prevent default scroll behavior
       event.preventDefault();
     }
@@ -94,6 +105,22 @@ export default function Page() {
           window.pageYOffset +
           scrollableRef.current.getBoundingClientRect().top +
           scrollableRef.current.getBoundingClientRect().height / 2;
+        const scrollPosition = divMiddleY - window.innerHeight / 2;
+
+        // Scroll to the calculated position
+        window.scrollTo({ top: scrollPosition, behavior: "smooth" });
+      }
+      if (
+        videoRef.current.getBoundingClientRect().top <= 250 &&
+        videoRef.current.getBoundingClientRect().top >= -250
+      ) {
+        console.log("check");
+
+        // Calculate where to scroll to put the middle of the div in the middle of the screen
+        const divMiddleY =
+          window.pageYOffset +
+          videoRef.current.getBoundingClientRect().top +
+          videoRef.current.getBoundingClientRect().height / 2;
         const scrollPosition = divMiddleY - window.innerHeight / 2;
 
         // Scroll to the calculated position
@@ -304,31 +331,34 @@ export default function Page() {
         </div>
       </div>
 
-      {/* <div
-        className="360-view w-full min-h-[100vh] bg-gradient-to-b from-dark-4 to-dark-5 flex flex-col overflow-x-auto space-x-4"
-        onScroll={() =>
-          setScrollDisabled(scrollableRef.current.scrollTop !== 0)
-        }
-        ref={scrollableRef}
-      >
-        <img
-          className="image360 "
-          src={`/360-images/${currentIndex}.jpg`}
-          alt={`Aston image ${currentIndex}`}
-        />
-      </div> */}
       <div
-        className="360-view-div w-full h-[100vh] bg-gradient-to-b flex flex-col items-center justify-center relative overflow-hidden"
+        className="360-view-div w-full h-[100vh] bg-gradient-to-b flex flex-col items-center justify-center relative overflow-hidden scroll-smooth"
         ref={scrollableRef}
       >
         <img
           src={`/360-images/${currentIndex}.jpg`}
           alt="360 View"
+          loading="lazy"
           layout="fill"
           objectFit="cover"
           className="absolute bottom-0 w-full h-full object-cover"
         />
       </div>
+
+      <div
+        className="w-full min-h-[100vh] bg-aston-green  px-4 py-8 lg:px-24 lg:py-48 flex flex-col items-center justify-center"
+        ref={videoRef}
+      >
+        <iframe
+          className="w-[90vw] h-[40vh] lg:w-[80vw] lg:h-[60vh]"
+          src="https://www.youtube.com/embed/nKe98FGACoU"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+      </div>
+
       <div
         className="image-showroom flex flex-col lg:flex-row h-fit  items-stretch relative"
         ref={imageShowroomRef}
